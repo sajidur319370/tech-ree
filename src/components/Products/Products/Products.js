@@ -7,6 +7,9 @@ import Watch from "../Watch/Watch";
 const Products = () => {
   return (
     <Container>
+      <h1 className="text-warning display-3 bg-dark my-5 ">
+        Welcom To Our Store
+      </h1>
       <Watch></Watch>
       <Phone></Phone>
       <Tv></Tv>
