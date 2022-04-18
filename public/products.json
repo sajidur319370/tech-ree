@@ -1,0 +1,146 @@
+[
+    {
+      "id": "1",
+      "category": "watch",
+      "img": "https://i.ibb.co/r48hG4h/watch-1.png",
+      "name": "SAMSUNG Galaxy Watch Active 2 Aluminum Black",
+      "price": "320",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "2",
+      "category": "watch",
+      "img": "https://i.ibb.co/vmVB9Hs/watch-2.png",
+      "name": "Apple Watch Series 3 GPS - 42mm -  Sport Band",
+      "price": "350",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "3",
+      "category": "watch",
+      "img": "https://i.ibb.co/2dSVMzS/watch-3.png",
+      "name": "Apple Watch Series 3 GPS - 42mm -  Sport Band",
+      "price": "120",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "4",
+      "category": "watch",
+      "img": " https://i.ibb.co/G7nCFvX/watch-4.png",
+      "name": "Bronson Chronograph Smoke Stainless Steel Watch Fossil",
+      "price": "89",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "5",
+      "category": "watch",
+      "img": "https://i.ibb.co/WWCkHW0/watch-5.png",
+      "name": "Cubitt Smart Watch CT2S Waterproof Fitness Tracker",
+      "price": "99",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "6",
+      "category": "watch",
+      "img": "https://i.ibb.co/3k9kTQG/watch-6.png",
+      "name": "Fossil End-of-Season Modern Mac Analog Black Dial Men's Watch -FS4927",
+      "price": "129",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "7",
+      "category": "phone",
+      "img": "https://i.ibb.co/T49vHbj/phone-1.png",
+      "name": "Google Pixel 3XL 64GB Black (Unlocked) Good Condition",
+      "price": "129",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "8",
+      "category": "phone",
+      "img": "https://i.ibb.co/2nq1k8C/phone-2.png",
+      "name": "Google Pixel 6 Pro - 5G Android Phone - Unlocked Smartphone with Advanced Pixel Camera",
+      "price": "199",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "9",
+      "category": "phone",
+      "img": "https://i.ibb.co/hF4DgDB/phone-3.png",
+      "name": "Apple iPhone XR, 64GB, Black - Unlocked (Renewed Premium)",
+      "price": "339",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "10",
+      "category": "phone",
+      "img": "https://i.ibb.co/VY5RzkX/phone-4.png",
+      "name": "Apple iPhone 12 Pro, 128GB, Pacific Blue - Unlocked (Renewed Premium)",
+      "price": "799",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "11",
+      "category": "phone",
+      "img": "https://i.ibb.co/TRB7kk1/watch-5.png",
+      "name": "Samsung Galaxy S21 FE 5G Cell Phone, Factory Unlocked Android Smartphone",
+      "price": "499",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "12",
+      "category": "phone",
+      "img": "https://i.ibb.co/c1Gds2d/watch-6.png",
+      "name": "Motorola One 5G Ace",
+      "price": "349",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "13",
+      "category": "tv",
+      "img": "https://i.ibb.co/BLC0mjG/tv-2.png",
+      "name": "JVC 70 inch Class 4K UHD 2160p Roku Smart TV",
+      "price": "697",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "14",
+      "category": "tv",
+      "img": "https://i.ibb.co/pRrVw8Q/tv-1.png",
+      "name": "Walton WPF21T1 TV",
+      "price": "660",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "15",
+      "category": "tv",
+      "img": "https://i.ibb.co/xgNHPVQ/tv-3.png",
+      "name": "Apple TV 4K (32GB, Previous Model)",
+      "price": "999",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "16",
+      "category": "tv",
+      "img": "https://i.ibb.co/1nGrQpf/tv-4.png",
+      "name": "Sony 65 inc Class 4K UHD LED Android Smart TV HDR BRAVIA",
+      "price": "559",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "17",
+      "category": "tv",
+      "img": " https://i.ibb.co/kmz0PdZ/tv-5.png",
+      "name": "SAMSUNG 75 inc Class 4K Ultra HD HDR Smart QLED TV",
+      "price": "768",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    },
+    {
+      "id": "18",
+      "category": "tv",
+      "img": "https://i.ibb.co/t45LmrQ/tv-6.png",
+      "name": "LG 43 inch 4K Ultra HD Smart LED TV 2020",
+      "price": "499",
+      "description": "The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. "
+    }
+  ]
