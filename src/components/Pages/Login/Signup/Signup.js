@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Signup = () => {
   const nameRef = useRef("");
@@ -26,7 +27,7 @@ const Signup = () => {
   return (
     <div className="bg-dark">
       <h2 className="text-warning bg-dark py-5">Please Sign Up</h2>
-      <div className="w-50 mx-auto text-start py-5">
+      <div className="w-50 mx-auto text-start pt-5">
         <Form onSubmit={handleFormSubmit}>
           <Form.Group className="mb-3 text-white" controlId="formBasicName">
             <Form.Label>Your Name</Form.Label>
@@ -73,18 +74,21 @@ const Signup = () => {
           <Form.Group className="mb-3 text-white" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-          <Button variant="primary" type="submit">
-            Sign Up
-          </Button>
+          <div className="text-center">
+            <Button variant="primary" type="submit">
+              Sign Up
+            </Button>
+          </div>
         </Form>
 
-        <p className="text-white my-5">
+        <p className="text-white mt-5 text-center">
           Already have an account?{" "}
           <Link to="/login" className="text-warning text-decoration-none mx-2">
-            Please login
+            Please log In
           </Link>
         </p>
       </div>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };

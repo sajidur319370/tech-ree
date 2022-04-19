@@ -29,7 +29,7 @@ const Login = () => {
   }
   return (
     <div className="bg-dark">
-      <h2 className="text-warning bg-dark pt-5">Please Log in</h2>
+      <h2 className="text-warning bg-dark pt-5">Please Log In</h2>
       <div className="w-50 mx-auto text-start pt-5">
         <Form onSubmit={handleFormSubmit}>
           <Form.Group className="mb-3 text-white" controlId="formBasicEmail">
@@ -54,11 +54,13 @@ const Login = () => {
           <Form.Group className="mb-3 text-white" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-          <Button variant="primary" type="submit">
-            Log In
-          </Button>
+          <div className="text-center">
+            <Button variant="primary" type="submit">
+              Log In
+            </Button>
+          </div>
         </Form>
-        <p className="text-white mt-3">
+        <p className="text-white mt-3 text-center">
           New to Tech-Ree?{" "}
           <Link to="/signup" className="text-warning text-decoration-none mx-2">
             Please Sign Up
