@@ -7,7 +7,12 @@ const Cart = () => {
   return (
     <div>
       <h2>This is Cart</h2>
-      <div className="d-inline-block my-5">
+      <div
+        onClick={() => {
+          navigate("/orders");
+        }}
+        className="d-inline-block my-5"
+      >
         <Button className="btn btn-secondary m-3">Go to the Orders</Button>
         <Button
           onClick={() => {
