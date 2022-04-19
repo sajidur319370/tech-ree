@@ -6,8 +6,10 @@ import Cart from "./components/Cart/Cart";
 import Checkout from "./components/Checkout/Checkout";
 import Home from "./components/Home/Home/Home";
 import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
 import Orders from "./components/Orders/Orders";
 import Phone from "./components/Products/Phone/Phone";
+import ProductDetails from "./components/Products/ProductDetails/ProductDetails";
 import Products from "./components/Products/Products/Products";
 import Tv from "./components/Products/Tv/Tv";
 import Watch from "./components/Products/Watch/Watch";
@@ -30,10 +32,15 @@ function App() {
         <Route path="/phone" element={<Phone></Phone>}></Route>
         <Route path="/tv" element={<Tv></Tv>}></Route>
         <Route path="/products" element={<Products></Products>}></Route>
+        <Route
+          path="/products/:id"
+          element={<ProductDetails></ProductDetails>}
+        ></Route>
         <Route path="/orders" element={<Orders></Orders>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/cart" element={<Cart></Cart>}></Route>
         <Route path="/checkout" element={<Checkout></Checkout>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
