@@ -1,21 +1,21 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./components/About/About";
-import Blogs from "./components/Blogs/Blogs";
-import Cart from "./components/Cart/Cart";
-import Checkout from "./components/Checkout/Checkout";
-import Home from "./components/Home/Home/Home";
-import Login from "./components/Login/Login";
-import Signup from "./components/Signup/Signup";
-import Orders from "./components/Orders/Orders";
-import Phone from "./components/Products/Phone/Phone";
-import ProductDetails from "./components/Products/ProductDetails/ProductDetails";
-import Products from "./components/Products/Products/Products";
-import Tv from "./components/Products/Tv/Tv";
-import Watch from "./components/Products/Watch/Watch";
-import Footer from "./components/Shared/Footer/Footer";
-import Header from "./components/Shared/Header/Header";
-import NotFound from "./components/Shared/NotFound/NotFound";
+import About from "./components/Pages/About/About";
+import Blogs from "./components/Pages/Blogs/Blogs";
+import Cart from "./components/Pages/Cart/Cart";
+import Checkout from "./components/Pages/Checkout/Checkout";
+import Home from "./components/Pages/Home/Home/Home";
+import Login from "./components/Pages/Login/Login/Login";
+import Signup from "./components/Pages/Login/Signup/Signup";
+import Orders from "./components/Pages/Orders/Orders";
+import Phone from "./components/Pages/Products/Phone/Phone";
+import ProductDetails from "./components/Pages/Products/ProductDetails/ProductDetails";
+import Products from "./components/Pages/Products/Products/Products";
+import Tv from "./components/Pages/Products/Tv/Tv";
+import Watch from "./components/Pages/Products/Watch/Watch";
+import Footer from "./components/Pages/Shared/Footer/Footer";
+import Header from "./components/Pages/Shared/Header/Header";
+import NotFound from "./components/Pages/Shared/NotFound/NotFound";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 
 function App() {

@@ -2,7 +2,8 @@ import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import auth from "../../firebase.init";
+import auth from "../../../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -28,8 +29,8 @@ const Login = () => {
   }
   return (
     <div className="bg-dark">
-      <h2 className="text-warning bg-dark py-5">Please Log in</h2>
-      <div className="w-50 mx-auto text-start py-5">
+      <h2 className="text-warning bg-dark pt-5">Please Log in</h2>
+      <div className="w-50 mx-auto text-start pt-5">
         <Form onSubmit={handleFormSubmit}>
           <Form.Group className="mb-3 text-white" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -57,14 +58,14 @@ const Login = () => {
             Log In
           </Button>
         </Form>
-
-        <p className="text-white my-5">
+        <p className="text-white mt-3">
           New to Tech-Ree?{" "}
           <Link to="/signup" className="text-warning text-decoration-none mx-2">
             Please Sign Up
           </Link>
         </p>
       </div>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };

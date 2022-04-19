@@ -1,6 +1,6 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import useProducts from "../../../hooks/useProducts";
+import useProducts from "../../../../hooks/useProducts";
 import Product from "../Product/Product";
 
 const Watch = () => {

@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import auth from "../../firebase.init";
+
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import auth from "../../../../firebase.init";
 
 const Signup = () => {
   const nameRef = useRef("");
