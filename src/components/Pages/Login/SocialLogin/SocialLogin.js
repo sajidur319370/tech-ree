@@ -9,7 +9,7 @@ import {
   useSignInWithGithub,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
   const navigate = useNavigate();
@@ -26,8 +26,10 @@ const SocialLogin = () => {
   const handleFaceebookSignIn = () => {
     signInWithFacebook();
   };
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   if (user1 || user2 || user3) {
-    navigate("/home");
+    navigate(from, { replace: true });
   }
   return (
     <div>

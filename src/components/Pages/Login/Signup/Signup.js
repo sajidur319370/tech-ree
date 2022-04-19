@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useCreateUserWithEmailAndPassword,
+  useUpdateProfile,
+} from "react-firebase-hooks/auth";
 import auth from "../../../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
 
@@ -12,23 +15,38 @@ const Signup = () => {
   const passwordRef = useRef("");
   const confirmPasswordRef = useRef("");
 
-  const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+  const [agree, setAgree] = useState(false);
+  const [warning, setWarning] = useState("");
 
-  const handleFormSubmit = (event) => {
+  const [createUserWithEmailAndPassword, user, loading] =
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+  const [updateProfile, updating] = useUpdateProfile(auth);
+
+  const handleSignUp = async (event) => {
     event.preventDefault();
     const name = nameRef.current.value;
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     const confirmPassword = confirmPasswordRef.current.value;
 
-    createUserWithEmailAndPassword(email, password);
+    if (password !== confirmPassword) {
+      setWarning("Password doesnt match");
+      return;
+    }
+
+    await createUserWithEmailAndPassword(email, password);
+    await updateProfile({ displayName: name });
+    alert("Updated profile");
   };
+
+  if (user) {
+    console.log(user);
+  }
   return (
     <div className="bg-dark">
       <h2 className="text-warning bg-dark py-5">Please Sign Up</h2>
       <div className="w-50 mx-auto text-start pt-5">
-        <Form onSubmit={handleFormSubmit}>
+        <Form onSubmit={handleSignUp}>
           <Form.Group className="mb-3 text-white" controlId="formBasicName">
             <Form.Label>Your Name</Form.Label>
             <Form.Control
@@ -70,12 +88,18 @@ const Signup = () => {
               placeholder="Confirm Password"
               required
             />
+            <p className="text-danger">{warning}</p>
           </Form.Group>
           <Form.Group className="mb-3 text-white" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
+            <Form.Check
+              onClick={() => setAgree(!agree)}
+              className={agree ? "text-primary" : "text-danger"}
+              type="checkbox"
+              label="Accept Terms And Condition"
+            />
           </Form.Group>
           <div className="text-center">
-            <Button variant="primary" type="submit">
+            <Button disabled={!agree} variant="primary" type="submit">
               Sign Up
             </Button>
           </div>

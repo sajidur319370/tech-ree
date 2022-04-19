@@ -20,7 +20,16 @@ const Product = ({ item }) => {
         <Button onClick={() => navigate(`/products/${id}`)} variant="link">
           See Details
         </Button>
+        <Button
+          onClick={() => {
+            navigate("/checkout");
+          }}
+          className="btn btn-secondary m-3"
+        >
+          Proceed Checkout
+        </Button>
       </div>
+
       <Button className="position-absolute bottom-0 start-50 translate-middle">
         Add To cart
       </Button>

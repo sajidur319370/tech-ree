@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -14,7 +17,7 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
-  let from = location.state?.from?.pathname || "/";
+  const from = location.state?.from?.pathname || "/";
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -27,6 +30,12 @@ const Login = () => {
   if (user) {
     navigate(from, { replace: true });
   }
+
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+  const resetPassword = async () => {
+    const email = emailRef.current.value;
+    await sendPasswordResetEmail(email);
+  };
   return (
     <div className="bg-dark">
       <h2 className="text-warning bg-dark pt-5">Please Log In</h2>
@@ -51,9 +60,13 @@ const Login = () => {
               required
             />
           </Form.Group>
-          <Form.Group className="mb-3 text-white" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
+          <div className="text-white d-flex align-items-center">
+            Forget Password?
+            <Button onClick={resetPassword} variant="link">
+              Reset Password
+            </Button>
+          </div>
+
           <div className="text-center">
             <Button variant="primary" type="submit">
               Log In
