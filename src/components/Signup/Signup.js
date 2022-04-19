@@ -5,6 +5,7 @@ import auth from "../../firebase.init";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 const Signup = () => {
+  const nameRef = useRef("");
   const emailRef = useRef("");
   const passwordRef = useRef("");
   const confirmPasswordRef = useRef("");
@@ -14,15 +15,28 @@ const Signup = () => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
+    const name = nameRef.current.value;
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     const confirmPassword = confirmPasswordRef.current.value;
+
+    createUserWithEmailAndPassword(email, password);
   };
   return (
     <div className="bg-dark">
       <h2 className="text-warning bg-dark py-5">Please Sign Up</h2>
       <div className="w-50 mx-auto text-start py-5">
         <Form onSubmit={handleFormSubmit}>
+          <Form.Group className="mb-3 text-white" controlId="formBasicName">
+            <Form.Label>Your Name</Form.Label>
+            <Form.Control
+              ref={nameRef}
+              type="text"
+              placeholder="Enter Name"
+              required
+            />
+          </Form.Group>
+
           <Form.Group className="mb-3 text-white" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control

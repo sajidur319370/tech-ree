@@ -7,13 +7,15 @@ const Cart = () => {
   return (
     <div>
       <h2>This is Cart</h2>
-      <div
-        onClick={() => {
-          navigate("/orders");
-        }}
-        className="d-inline-block my-5"
-      >
-        <Button className="btn btn-secondary m-3">Go to the Orders</Button>
+      <div className="d-inline-block my-5">
+        <Button
+          onClick={() => {
+            navigate("/orders");
+          }}
+          className="btn btn-secondary m-3"
+        >
+          Go to the Orders
+        </Button>
         <Button
           onClick={() => {
             navigate("/checkout");
